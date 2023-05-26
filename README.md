@@ -1,5 +1,6 @@
 ## Project explanation
 I've implemented 2 solutions to the following problem:
+
 "For given book, and a list of keywords, return pages each keyword appears on"
 
 The first solution "calculateIndexWithSet" converts the List of words on each page into a Hashset, allowing
@@ -28,7 +29,9 @@ however this could be changed to a special value(e.g. null) or an Exception to b
 
 ### Results
 Benchmark                                                              Mode  Cnt  Score   Error  Units
+
 IndexCalculatorBenchmarkTests.many_page_book_has_keywords_set_test     avgt   10  0.150 ± 0.009  ms/op
+
 IndexCalculatorBenchmarkTests.many_page_book_has_keywords_sorted_test  avgt   10  0.262 ± 0.005  ms/op
 
 ### Conclusions
@@ -53,19 +56,32 @@ JMH version: 1.21
  Warmup Iteration   1: 0.158 ms/op
 
  Warmup Iteration   2: 0.300 ms/op
+
  Warmup Iteration   3: 0.175 ms/op
+
  Warmup Iteration   4: 0.185 ms/op
+
  Warmup Iteration   5: 0.190 ms/op
+
  Warmup Iteration   6: 0.187 ms/op
 Iteration   1: 0.145 ms/op
+
 Iteration   2: 0.148 ms/op
+
 Iteration   3: 0.148 ms/op
+
 Iteration   4: 0.144 ms/op
+
 Iteration   5: 0.146 ms/op
+
 Iteration   6: 0.150 ms/op
+
 Iteration   7: 0.148 ms/op
+
 Iteration   8: 0.151 ms/op
+
 Iteration   9: 0.166 ms/op
+
 Iteration  10: 0.150 ms/op
 
 
@@ -89,20 +105,35 @@ CI (99.9%): [0.140, 0.159] (assumes normal distribution)
  Run progress: 50.00% complete, ETA 00:02:00
  Fork: 1 of 1
  Warmup Iteration   1: 0.306 ms/op
+
  Warmup Iteration   2: 0.294 ms/op
+
  Warmup Iteration   3: 0.291 ms/op
+
  Warmup Iteration   4: 0.273 ms/op
+
  Warmup Iteration   5: 0.341 ms/op
+
  Warmup Iteration   6: 0.295 ms/op
+
 Iteration   1: 0.262 ms/op
+
 Iteration   2: 0.268 ms/op
+
 Iteration   3: 0.262 ms/op
+
 Iteration   4: 0.267 ms/op
+
 Iteration   5: 0.262 ms/op
+
 Iteration   6: 0.257 ms/op
+
 Iteration   7: 0.261 ms/op
+
 Iteration   8: 0.264 ms/op
+
 Iteration   9: 0.260 ms/op
+
 Iteration  10: 0.261 ms/op
 
 
