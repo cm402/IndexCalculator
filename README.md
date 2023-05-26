@@ -30,9 +30,9 @@ however this could be changed to a special value(e.g. null) or an Exception to b
 ### Results
 Benchmark                                                              Mode  Cnt  Score   Error  Units
 
-IndexCalculatorBenchmarkTests.many_page_book_has_keywords_set_test     avgt   10  0.150 ± 0.009  ms/op
+IndexCalculatorBenchmarkTests.many_page_book_has_keywords_set_test     avgt   10  **0.150 ± 0.009  ms/op**
 
-IndexCalculatorBenchmarkTests.many_page_book_has_keywords_sorted_test  avgt   10  0.262 ± 0.005  ms/op
+IndexCalculatorBenchmarkTests.many_page_book_has_keywords_sorted_test  avgt   10  **0.262 ± 0.005  ms/op**
 
 ### Conclusions
 The results show that the set implementation outperforms the sorting implementation. This is due to the cost of sorting each page, and having to iterate over
