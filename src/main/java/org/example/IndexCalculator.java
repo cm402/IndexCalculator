@@ -1,8 +1,6 @@
 package org.example;
 
 import java.util.*;
-// Problem definition:
-// For given book, and a list of keywords, return pages each keyword appears on.
 public class IndexCalculator {
 
     public static Index calculateIndexWithSet(Book book, List<String> keywords){
